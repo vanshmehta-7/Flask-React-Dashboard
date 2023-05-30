@@ -1,0 +1,17 @@
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "8888:8888"
+  backend:
+    build: ./backend
+    ports:
+      - "5000:5000"
+    depends_on:
+      - postgres
+  postgres:
+    image: postgres:15.2
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+    env_file:
+      - ./backend/local.env
