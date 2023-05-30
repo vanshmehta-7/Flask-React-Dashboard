@@ -40,14 +40,14 @@ The Flask backend provides the following API endpoints:
 ## Project Structure
 The project structure is as follows:
 
-backend/: Contains the Flask backend code.
+- backend/: Contains the Flask backend code.
 
-frontend/: Contains the React frontend code.
+- frontend/: Contains the React frontend code.
 
-pgdata/: Volume for storing PostgreSQL data.
+- pgdata/: Volume for storing PostgreSQL data.
 
-docker-compose.yaml: Configuration file for Docker Compose.
+- docker-compose.yaml: Configuration file for Docker Compose.
 
-backend/local.env: Environment variables for the backend.
+- backend/local.env: Environment variables for the backend.
 
 
